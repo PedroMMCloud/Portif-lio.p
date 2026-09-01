@@ -1,0 +1,28 @@
+:root {
+    --cor-p: #758498;
+    --cor-s: #902837;
+    --cor-txt: #171d25;
+}
+
+body {
+    background-color: var(--cor-p);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+head {
+    align-items: center;
+}
+
+h2 {
+    color: var(--cor-txt);
+}
+
+hr {
+    border-bottom: 1px dotted var(--cor-s);
+    margin-bottom: 24px;
+}
