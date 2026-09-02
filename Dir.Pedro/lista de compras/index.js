@@ -1,27 +1,42 @@
 const inputItem = document.getElementById("input-item");
 const botaoAddItem = document.getElementById("adicionar-item");
 const listaDeCompras = document.getElementById("listaD-compras");
-const msgListaVazia = document.getElementById("mLista-vazia")
+const msgListaVazia = document.getElementById("container-lista")
+let contador = 0;
 
-function criarItemLista() {
-    event.preventDefault();
+
+botaoAddItem.addEventListener("click", (evento) => {
+    evento.preventDefault();
     if (inputItem.value === "") {
         alert("Lista vazia, pro favor adicione um item!");
         return
     }
-}
-
-function verificarListaV() {
-    const itemDLista = listaDeCompras.querySelectorAll("li");
-    if (itemDLista.length === 0) {
-        msgListaVazia.style.display = "block";
-    } else {
-        msgListaVazia.style.display = "none";
-    }
-}
-
-inputItem.addEventListener("click", () => {
-    const itemLista = criarItemLista();
-    listaDeCompras.appendChild(itemLista);
-    verificarListaV(listaDeCompras);
+    
 })
+
+const IdaLista = document.createElement("li");
+const containerItemDlista = document.createElement("div");
+containerItemDlista.classList.add("mLista-vazia");
+
+const iptCheckbox = document.createElement("input");
+const nItem = document.createElement("p");
+
+iptCheckbox.type = "checkbox";
+iptCheckbox.id = "checkbox-" + contador++;
+
+nItem.innerText = inputItem.value;
+
+iptCheckbox.addEventListener("click", function () {
+    if (iptCheckbox.checked) {
+        nItem.style.textDecoration = "line-through";
+    } else {
+        nItem.style.textDecoration = "none";
+    }
+    console.log(i);
+    
+});
+
+containerItemDlista.appendChild(iptCheckbox);
+containerItemDlista.appendChild(nItem);
+
+IdaLista.appendChild(containerItemDlista);
