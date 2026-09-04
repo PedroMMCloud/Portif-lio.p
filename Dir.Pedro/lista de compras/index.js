@@ -1,7 +1,7 @@
-const inputItem = document.getElementById("input-item");
+const inputItem = document.querySelector("#input-item");
 const botaoAddItem = document.getElementById("adicionar-item");
 const listaDeCompras = document.getElementById("listaD-compras");
-const msgListaVazia = document.getElementById("container-lista")
+const msgListaVazia = document.getElementById("container-lista");
 let contador = 0;
 
 
@@ -15,6 +15,10 @@ botaoAddItem.addEventListener("click", (evento) => {
 })
 
 const IdaLista = document.createElement("li");
+
+IdaLista.textContent = inputItem;
+listaDeCompras.appendChild(IdaLista);
+
 const containerItemDlista = document.createElement("div");
 containerItemDlista.classList.add("mLista-vazia");
 
@@ -32,8 +36,6 @@ iptCheckbox.addEventListener("click", function () {
     } else {
         nItem.style.textDecoration = "none";
     }
-    console.log(i);
-    
 });
 
 containerItemDlista.appendChild(iptCheckbox);
