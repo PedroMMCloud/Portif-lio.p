@@ -65,6 +65,12 @@ span {
     gap: 40px;
 }
 
+.apresentacao_imagem1 {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+}
+
 .apresentacao_conteudo2 {
     width: 100%;
     display: flex;
@@ -123,8 +129,8 @@ span {
     color: var(--cor-destaque);
 }
 
-.apresentacao_imagem {
-    width: 10%;
+.apresentacao_imagem2 {
+    width: 50%;
 }
 
 .rodape {
