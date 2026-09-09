@@ -1,0 +1,18 @@
+:root{
+    --cor-principal: #ff6b81;
+    --cor-secundaria: #ffe4e8;
+    --cor-fundo: #fff8f9;
+    --cor-texto: #333;
+    --cor-destaque: #c44569;
+}
+
+*{
+    background-color: var(--cor-fundo);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}

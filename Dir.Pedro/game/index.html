@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joguinho</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+        .road{
+            width: 450px;
+            height: 100vh;
+            background-image: url(./assets/estradaQeuVouColocarDps);
+            background-size: cover;
+            background-repeat: repeat-y;
+            background-position: 50% 50%;
+            animation: roadmove 4s infinite linear;
+        }
+        @keyframes roadmove {
+            0%{background-position: 0 0;}
+            100%{background-position: 0 100vh;}
+        }
+        #car {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="road">
+        <img src="" alt="carrinhoooo" id= "car">
+    </div>
+    <script>
+        var move=10;
+        var car=document.getElementById("car");
+        window.onload=()=> {
+            car.style.position="absolute";
+            car.style.bottom=0
+            car.style.top=0
+            car.style.left=0
+        }
+        window.onkeydown=(e) => {
+            switch (e.key) {
+            case 'ArrowDown':
+                car.style.top = parseInt(car.style.top) + move + 'px';
+                break;
+            case 'ArrowUp':
+                car.style.top = parseInt(car.style.top) - move + 'px';
+                break;
+            case 'ArrowRight':
+                car.style.left = parseInt(car.style.left) + move + 'px';
+                break;
+            case 'ArrowLeft':
+                car.style.left = parseInt(car.style.left) - move + 'px';
+                break;
+            }
+        }
+    </script>
+</body>
+</html>
