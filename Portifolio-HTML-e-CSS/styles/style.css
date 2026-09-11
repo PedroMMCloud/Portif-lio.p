@@ -34,12 +34,12 @@ section{
 }
 
 .cabecalho {
-    padding: 2% 0% 0% 15%;
+    padding: 5% 0% 0% 3%;
 }
 
 .cabecalho_menu {
     display: flex;
-    gap: 80px;
+    gap: 50px;
 }
 
 .cabecalho_menu_links {
@@ -56,34 +56,42 @@ section{
 }
 
 .apresentacao {
-    padding: 5% 15%;
+    padding: 5% 10%;
     justify-content: space-between;
     gap: 90px;
 }
 
 
 /* Paragrafo 1 */
-.secao1 {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    align-items: center;
-}
 
 .apresentacao_conteudo1 {
     width: 80%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-direction:column;
     gap: 40px;
+    margin: 25% 0%;
 }
 
-.apresentacao_imagem1 {
+.apresentacao-secao1 {
+    display: flex;
+    align-items: center;
+}
+
+.apresentacao_imagem2 {
     width: 90%;
     display: flex;
     align-items: flex-end;
 }
 
 /* Paragrafo 2 */
+
+.secao2 {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+}
+
 .apresentacao_conteudo2 {
     width: 100%;
     display: flex;
@@ -91,8 +99,9 @@ section{
     gap: 40px;
 }
 
-.apresentacao_imagem2 {
-    width: 30%;
+.imagem1 {
+    width: 70%;
+    margin: 5% 0% 0% 10px;
 }
 
 /* Paragrafo 3 */
@@ -112,6 +121,14 @@ section{
 }
 
 /* Titulo */
+
+.apresentacao_conteudo_titulo-P {
+    font-size: 5.25rem;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-terciaria);
+    padding: 5% 0% 0% 0%;
+}
+
 .apresentacao_conteudo_titulo {
     font-size: 2.25rem;
     font-family: var(--fonte-primaria);
@@ -131,10 +148,9 @@ section{
 
 .apresentacao_links {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    gap: 32px;
+    gap: 10px;
 }
 
 .apresentacao_links_subtitulo {
@@ -153,10 +169,29 @@ section{
     border-radius: 10px;
     font-size: 1.5rem;
     font-weight: 600;
+    padding: 10px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.habilidades-container {
+    justify-content:space-between;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 20%;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
     padding: 15px 0;
     text-decoration: none;
     color: var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
+}
+
+.habilidades-container-conteudo {
+    gap: 20%;
 }
 
 img {
