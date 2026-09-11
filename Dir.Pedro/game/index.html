@@ -9,16 +9,17 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            background-color: green;
         }
         body{
             display: grid;
             place-items: center;
-            height: 100vh;
+            height: 50vh;
         }
         .road{
-            width: 450px;
+            width: 50%;
             height: 100vh;
-            background-image: url(./assets/estradaQeuVouColocarDps);
+            background-image: url(./road.png);
             background-size: cover;
             background-repeat: repeat-y;
             background-position: 50% 50%;
@@ -29,13 +30,13 @@
             100%{background-position: 0 100vh;}
         }
         #car {
-            width: 100px;
+            width: 10%;
         }
     </style>
 </head>
 <body>
     <div class="road">
-        <img src="" alt="carrinhoooo" id= "car">
+        <img src="./car.png" alt="carrinhoooo" id= "car">
     </div>
     <script>
         var move=10;
