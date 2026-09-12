@@ -19,8 +19,9 @@
             width: 50%;
             height: 100vh;
             background-image: url(./road.png);
-            background-size: cover;
+            background-size: 100% auto;
             background-repeat: repeat-y;
+            image-rendering: pixelated;
             background-position: 50% 50%;
             animation: roadmove 4s infinite linear;
         }
@@ -29,7 +30,11 @@
             100%{background-position: 0 100vh;}
         }
         #car {
-            width: 10%;
+            position: absolute;
+            width: 15%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>

@@ -1,27 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria interativa</title>
-    <link rel="stylesheet" href="./styles.css">
+
+    <title>Minha Galeria</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="./scripts.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <a href="">menu a</a>
-            <a href="">menu b</a>
-            <a href="">menu c</a>
-        </nav>
+
+    <header class="cabecalho">
+        <h1>Galeria de arte</h1>
+        <p>Obras de arte de períodos diferentes da história.</p>
     </header>
 
     <main>
-        <section>
-            <h1 id="titulo">Titulo</h1>
-            <p>subtitulo/paragrafo</p>
 
-            <button id="comecar">comecar</button>
+        <section class="galeria" id="galeria">
+
+            <article class="foto">
+                <img src="./assets/Michelangelo-Pietà-mármore-1499.jpg" alt="Descrição da foto 1">
+                <div class="informacoes">
+                    <h2>Pietá.</h2>
+                    <p>Michelangelo 1499. Escultura em Mármore, 
+                    exibe Maria com Jesus morto em seus 
+                    braços. Basilica di San Pietro, 
+                    Vaticano, Itália.</p>
+                </div>
+            </article>
+
+            <article class="foto">
+                <img src="./assets/Gian Lorenzo Bernini.jpg" alt="Descrição da foto 2">
+                <div class="informacoes">
+                    <h2>Beata Ludovica Albertoni.</h2>
+                    <p>Gian Lorenzo Bernini.</p>
+                </div>
+            </article>
+
+            <article class="foto">
+                <img src="./assets/divina-comedia-obra.jpg.webp" alt="Descrição da foto 3">
+                <div class="informacoes">
+                    <h2>Retrato Alegórico de Dante Alighieri</h2>
+                    <p>Uma pintura a óleo sobre 
+                    madeira do século XVI atribuída 
+                    ao artista florentino Agnolo 
+                    Bronzino.</p>
+                </div>
+            </article>
+
+            <article class="foto">
+                <img src="./assets/a-apoteose-de-hercules-por-francois-lemoyne.jpg.webp" alt="Descrição da foto 4">
+                <div class="informacoes">
+                    <h2>A Apoteose de Hércules</h2>
+                    <p> por François Lemoyne.</p>
+                </div>
+            </article>
+
         </section>
+
+        <div class="modal" id="modal">
+            <button id="fechar">&times;</button>
+            <img class="imagem-ampliada" id="imagem-ampliada" src="" alt="">
+        </div>
+
     </main>
+
 </body>
 </html>
+
