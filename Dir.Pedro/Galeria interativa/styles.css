@@ -43,7 +43,6 @@ body {
     max-width: 500px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(220px, 1fr) );
     gap: 50px;
 }
 
