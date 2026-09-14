@@ -1,17 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
 
 :root {
-
-    /* Cores */
-
     --cor-primaria: #000000;
     --cor-secundaria: #12A2BC;
     --cor-terciaria: #EFBE09;
     --cor-hover: #2c2c2c;
-    --cor-destaque: #670000;
 
     /* Fontes */
-
     --fonte-titulo: "Krona One", sans-serif;
     --fonte-texto: "Montserrat", sans-serif;
 }
@@ -60,10 +55,9 @@ strong {
 
 .navegacao__link:hover {
     color: var(--cor-secundaria);
-    text-decoration: underline;
+    text-decoration: none;
     text-decoration-style: dashed;
 }
-
 
 .secao {
     width: 100%;
@@ -72,13 +66,11 @@ strong {
     padding: 8% 10%;
 }
 
-
 .secao__conteudo {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-
 
 .titulo {
     color: var(--cor-terciaria);
@@ -90,7 +82,6 @@ strong {
     font-size: 5rem;
 }
 
-
 .texto {
     max-width: 900px;
     color: var(--cor-secundaria);
@@ -99,7 +90,6 @@ strong {
     line-height: 1.7;
 }
 
-
 .secao--home {
     min-height: 80vh;
     display: flex;
@@ -107,7 +97,6 @@ strong {
     justify-content: center;
     text-align: center;
 }
-
 
 .secao--sobre {
     display: grid;
@@ -129,7 +118,6 @@ strong {
     border-radius: 10px;
 }
 
-
 #habilidades {
     display: flex;
     flex-direction: column;
@@ -141,7 +129,6 @@ strong {
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
 }
-
 
 .habilidade {
     display: flex;
@@ -181,7 +168,6 @@ strong {
     min-height: 500px;
 }
 
-
 .rodape {
     padding: 24px;
     background-color: var(--cor-terciaria);
@@ -190,7 +176,6 @@ strong {
     font-weight: 400;
     text-align: center;
 }
-
 
 @media (max-width: 1035px) {
 
@@ -228,9 +213,7 @@ strong {
 
     .navegacao {
         flex-direction: column;
-
         align-items: center;
-
         gap: 15px;
     }
 
@@ -254,4 +237,45 @@ strong {
         width: 100%;
     }
 
+}
+
+.galeria {
+    max-width: 1000px;
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+/* Cards */
+.foto {
+    background-color: var(--cor-3);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(127, 187, 237, 0.15);
+}
+
+/* Imagem dos cards */
+.foto img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+.informacoes {
+    padding: 15px;
+}
+
+.informacoes h2 {
+    margin-bottom: 5px;
+}
+
+.informacoes p {
+    color: var(--cor-2);
 }
