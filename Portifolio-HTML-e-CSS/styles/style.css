@@ -5,6 +5,7 @@
     --cor-secundaria: #12A2BC;
     --cor-terciaria: #EFBE09;
     --cor-hover: #2c2c2c;
+    --cinza-m: #535353;
 
     /* Fontes */
     --fonte-titulo: "Krona One", sans-serif;
@@ -240,15 +241,16 @@ strong {
 }
 
 .galeria {
-    max-width: 1000px;
-    display: flex;
+    max-width: 1250px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-    align-items: flex-start;
 }
 
 /* Cards */
 .foto {
-    background-color: var(--cor-3);
+    background-color: var(--cinza-m);
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -278,4 +280,5 @@ strong {
 
 .informacoes p {
     color: var(--cor-2);
+    color: var(--cor-primaria);
 }

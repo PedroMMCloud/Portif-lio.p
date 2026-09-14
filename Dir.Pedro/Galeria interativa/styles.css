@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
 :root{
     --cor-1: #A61C3C;
     --cor-2: #110B11;
     --cor-3: #F7F7FF;
-    --cor-4: #6b0f22;
+    --cor-4: #811135;
     --cor-5: #E84855;
+
+    --fonte-p: "EB Garamond", sans-serif;
+    --main-bg-color: linear-gradient(180deg, #a61c3c 0%, #280363 48.44%, #01080E 100%);
 }
 
 * {
@@ -18,6 +23,7 @@ body {
     background-color: var(--cor-1);
     color: #333;
     padding: 30px;
+    background: var(--main-bg-color);
 }
 
 /* Cabeçalho */
@@ -30,10 +36,12 @@ body {
     font-size: 2.5rem;
     margin-bottom: 10px;
     color: var(--cor-2);
+    font-family: var(--fonte-p);
 }
 
 .cabecalho p {
     color: var(--cor-3);
+    font-family: var(--fonte-p);
 }
 
 /* Galeria */
@@ -76,10 +84,12 @@ body {
 .informacoes h2 {
     margin-bottom: 5px;
     color: var(--cor-4);
+    font-family: var(--fonte-p);
 }
 
 .informacoes p {
     color: var(--cor-2);
+    font-family: var(--fonte-p);
 }
 
 /* Modal */
