@@ -148,7 +148,6 @@ strong {
 .habilidade img {
     width: 100px;
     height: 80px;
-
     object-fit: contain;
 }
 
@@ -240,6 +239,7 @@ strong {
 
 }
 
+
 .galeria {
     max-width: 1250px;
     margin: auto;
@@ -250,11 +250,12 @@ strong {
 
 /* Cards */
 .foto {
-    background-color: var(--cinza-m);
+    background-color: var(--cor-primaria);
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    border: 1px solid var(--cor-terciaria);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -280,5 +281,67 @@ strong {
 
 .informacoes p {
     color: var(--cor-2);
+    color: var(--cor-secundaria);
+}
+
+.contato-form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding-bottom: 4.375rem;
+    gap: 0.9375rem;
+}
+
+form {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.contato-form input{
+    font-weight: 300;
+    background: transparent;
+    border: 1px solid var(--cor-terciaria);
+}
+
+.contato-form textarea {
+    resize: none;
+    height: 10.625rem;
+}
+
+textarea {
+    background-color: var(--cor-primaria);
+    border: 1px solid var(--cor-terciaria);
+    cursor: pointer;
+}
+
+.contato-form input, .contato-form textarea{
     color: var(--cor-primaria);
+}
+
+.form-buttons {
+    display: flex;
+    gap: 0.9375rem;
+}
+
+.form-buttons button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fonte-texto);
+    font-size: medium;
+    color: var(--cor-secundaria);
+    border: solid var(--cor-terciaria);
+    height: 3.125rem;
+    background: var(--cor-primaria);
+    cursor: pointer;
+    border-image: none;
+    padding: 0.625rem;
+    border-radius: 3px;
+    transition: background 0.3s;
+}
+
+.form-buttons, a img {
+    width: 50px;
+    height: 80px;
+    object-fit: contain;
 }

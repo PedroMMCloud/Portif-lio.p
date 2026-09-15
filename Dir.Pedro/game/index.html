@@ -14,9 +14,10 @@
             display: grid;
             place-items: center;
             height: 50vh;
+            background-color: rgb(3, 123, 27);
         }
         .road{
-            width: 50%;
+            width: 60%;
             height: 100vh;
             background-image: url(./road.png);
             background-size: 100% auto;
@@ -31,7 +32,7 @@
         }
         #car {
             position: absolute;
-            width: 15%;
+            width: 17%;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
@@ -48,22 +49,22 @@
         window.onload=()=> {
             car.style.position="absolute";
             car.style.bottom=0
-            car.style.top=0
-            car.style.left=0
+            car.style.top=1
+            car.style.left=-1
         }
         window.onkeydown=(e) => {
             switch (e.key) {
             case 'ArrowDown':
-                car.style.top = parseInt(car.style.top) + move + 'px';
+                car.style.top = car.offsetTop + move + 'px';
                 break;
             case 'ArrowUp':
-                car.style.top = parseInt(car.style.top) - move + 'px';
+                car.style.top = car.offsetTop - move + 'px';
                 break;
             case 'ArrowRight':
-                car.style.left = parseInt(car.style.left) + move + 'px';
+                car.style.left = car.offsetLeft + move + 'px';
                 break;
             case 'ArrowLeft':
-                car.style.left = parseInt(car.style.left) - move + 'px';
+                car.style.left = car.offsetLeft - move + 'px';
                 break;
             }
         }
