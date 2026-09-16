@@ -12,8 +12,6 @@
     --fonte-texto: "Montserrat", sans-serif;
 }
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -280,7 +278,6 @@ strong {
 }
 
 .informacoes p {
-    color: var(--cor-2);
     color: var(--cor-secundaria);
 }
 
@@ -295,6 +292,7 @@ strong {
 form {
     display: block;
     unicode-bidi: isolate;
+    
 }
 
 .contato-form input{
@@ -312,6 +310,7 @@ textarea {
     background-color: var(--cor-primaria);
     border: 1px solid var(--cor-terciaria);
     cursor: pointer;
+    color: var(--cor-secundaria)
 }
 
 .contato-form input, .contato-form textarea{
